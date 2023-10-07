@@ -1,0 +1,85 @@
+body, h1, h2, p, button, label, input {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  padding-bottom: 40px;
+}
+
+header, main, p, h1, h2, label {
+  background-color: grey;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+header, main {
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+button {
+  background-color: #555;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #777;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+#question-container, #score-container, #highscores-section {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#start-btn {
+  display: block;
+  margin: 20px auto;
+}
+
+#feedback {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0800fe;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+#view-highscores-btn {
+  position: absolute;
+  top: 10px;  
+  left: 10px; 
+}
+
+#highscores-list {
+  list-style-type: none;
+  text-align: left;
+  width: fit-content; 
+  margin-left: auto; 
+  margin-right: auto;
+}

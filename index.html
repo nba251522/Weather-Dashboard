@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz Challenge</title>
+    <link rel="stylesheet" href="Develop/style.css">
+    <script src="Develop/script.js" defer></script>
+</head>
+<body>
+  <header>
+      <h1>Coding Quiz Challenge</h1>
+      <p>Test your coding knowledge while on a timer. Answer carefully, as each incorrect answer will remove 10 seconds from the clock!</p>
+  </header>
+  <main>
+  <section id="quiz-section">
+      <div id="timer">Time Left: <span id="time-value">60</span> seconds</div>
+      <button id="start-btn">Start Quiz</button>
+      <button id="view-highscores-btn">View Highscores</button>
+      <div id="question-container" class="hidden">
+          <p id="question-text">Question will appear here.</p>
+          <div id="answer-buttons"></div>
+          <div id="feedback" style="display: none;"></div>
+      </div>
+      <div id="score-container" class="hidden">
+        <h2>Game Over!</h2>
+        <p>Your Score: <span id="score-value">0</span></p>
+        <label for="initials">Enter Initials:</label>
+        <input type="text" id="initials">
+        <button id="save-score-btn">Save Score</button>
+    </div>
+</section>
+
+<section id="highscores-section" class="hidden">
+    <h2>High Scores</h2>
+    <ul id="highscores-list"></ul>
+    <button id="play-again-btn">Play Again</button>
+</section>
+</main>
+
+</body>   
+</html>
