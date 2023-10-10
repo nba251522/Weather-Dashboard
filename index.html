@@ -3,40 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Quiz Challenge</title>
+    <title>Weather Dashboard</title>
     <link rel="stylesheet" href="Develop/style.css">
-    <script src="Develop/script.js" defer></script>
 </head>
 <body>
-  <header>
-      <h1>Coding Quiz Challenge</h1>
-      <p>Test your coding knowledge while on a timer. Answer carefully, as each incorrect answer will remove 10 seconds from the clock!</p>
-  </header>
-  <main>
-  <section id="quiz-section">
-      <div id="timer">Time Left: <span id="time-value">60</span> seconds</div>
-      <button id="start-btn">Start Quiz</button>
-      <button id="view-highscores-btn">View Highscores</button>
-      <div id="question-container" class="hidden">
-          <p id="question-text">Question will appear here.</p>
-          <div id="answer-buttons"></div>
-          <div id="feedback" style="display: none;"></div>
-      </div>
-      <div id="score-container" class="hidden">
-        <h2>Game Over!</h2>
-        <p>Your Score: <span id="score-value">0</span></p>
-        <label for="initials">Enter Initials:</label>
-        <input type="text" id="initials">
-        <button id="save-score-btn">Save Score</button>
-    </div>
-</section>
+    <section id="search-section">
+        <h2>Search Weather</h2>
+        <input type="text" id="city-input" placeholder="Enter city name...">
+        <button id="search-button">Search</button>
+    </section>
+    <section id="current-weather-section">
+        <h2>Current Weather</h2>
+        <div id="current-weather">
+            <h3 id="city-name-date"></h3> 
+            <img id="weather-icon" src="" alt="Weather Icon"> 
+            <p id="temperature"></p> 
+            <p id="humidity"></p> 
+            <p id="wind-speed"></p> 
+        </div>
+    </section>
+    <section id="forecast-section">
+        <h2>5-Day Forecast</h2>
+        <div id="forecast-wrapper">
+            <div class="forecast-day" id="day1">
+                <h4 class="forecast-date"></h4>
+                <img class="forecast-icon" src="" alt="Weather Icon">
+                <p class="forecast-temperature"></p>
+                <p class="forecast-wind-speed"></p>
+                <p class="forecast-humidity"></p>
+            </div>
 
-<section id="highscores-section" class="hidden">
-    <h2>High Scores</h2>
-    <ul id="highscores-list"></ul>
-    <button id="play-again-btn">Play Again</button>
-</section>
-</main>
+            <div class="forecast-day" id="day2">
+                <h4 class="forecast-date"></h4>
+                <img class="forecast-icon" src="" alt="Weather Icon">
+                <p class="forecast-temperature"></p>
+                <p class="forecast-wind-speed"></p>
+                <p class="forecast-humidity"></p>
+            </div>
 
-</body>   
+            <div class="forecast-day" id="day3">
+                <h4 class="forecast-date"></h4>
+                <img class="forecast-icon" src="" alt="Weather Icon">
+                <p class="forecast-temperature"></p>
+                <p class="forecast-wind-speed"></p>
+                <p class="forecast-humidity"></p>
+            </div>
+
+            <div class="forecast-day" id="day4">
+                <h4 class="forecast-date"></h4>
+                <img class="forecast-icon" src="" alt="Weather Icon">
+                <p class="forecast-temperature"></p>
+                <p class="forecast-wind-speed"></p>
+                <p class="forecast-humidity"></p>
+            </div>
+
+            <div class="forecast-day" id="day5">
+                <h4 class="forecast-date"></h4>
+                <img class="forecast-icon" src="" alt="Weather Icon">
+                <p class="forecast-temperature"></p>
+                <p class="forecast-wind-speed"></p>
+                <p class="forecast-humidity"></p>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
