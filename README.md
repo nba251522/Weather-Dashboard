@@ -32,17 +32,18 @@ The Weather Dashboard allows users to view current and future weather conditions
 
 ## Usage                                                                            
 
-To start the quiz, [visit the deployed site](https://nba251522.github.io/Weather-Dashboard/). Click the "Start" button to begin and answer the questions as quickly as possible to secure a high score.
+To start the weather dashboard, [visit the deployed site](https://nba251522.github.io/Weather-Dashboard/). Click the "Start" button to begin and answer the questions as quickly as possible to secure a high score.
 
 ## Author Info
 
 **Thomas Er**
 - [LinkedIn](https://www.linkedin.com/in/thomas-er-9b77321b9)
 - [Github](https://github.com/nba251522)
+- [Porfolio]()
 
 ## Credits
 
-The creation of this quiz was aided by insights from the following resources:
+The creation of this application was aided by insights from the following resources:
 
 - [W3Schools - JavaScript Tutorial](https://www.w3schools.com/js/)
 - [W3Schools - CSS Tutorial](https://www.w3schools.com/css/default.asp)
