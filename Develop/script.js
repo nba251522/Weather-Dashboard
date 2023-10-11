@@ -13,6 +13,7 @@ function fetchWeatherData() {
             displayCurrentWeather(data);
             displayForecast(data);
             storeSearchHistory(cityName);
+            document.getElementById('weather-icon').style.display = 'block';
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
@@ -29,7 +30,7 @@ function displayCurrentWeather(data) {
 
 function displayForecast(data) {
     for (let i = 0; i < 5; i++) {
-        const forecastData = data.list[(i + 1) * 8];
+        const forecastData = data.list[i * 8];  
         const dayElem = document.getElementById(`day${i + 1}`);
 
         dayElem.querySelector('.forecast-date').textContent = new Date(forecastData.dt * 1000).toLocaleDateString();
@@ -37,6 +38,7 @@ function displayForecast(data) {
         dayElem.querySelector('.forecast-temperature').textContent = `Temperature: ${forecastData.main.temp}°F`;
         dayElem.querySelector('.forecast-wind-speed').textContent = `Wind Speed: ${forecastData.wind.speed} m/s`;
         dayElem.querySelector('.forecast-humidity').textContent = `Humidity: ${forecastData.main.humidity}%`;
+        dayElem.style.display = 'block';
     }
 }
 
