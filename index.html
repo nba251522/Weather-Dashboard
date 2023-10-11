@@ -9,78 +9,81 @@
 </head>
 
 <body>
-    <header>Weather Dashboard</header>
-    <div id="content-wrapper">
-        <div id="left-panel">
-            <section id="search-section">
-                <h2>Search Weather</h2>
-                <input type="text" id="city-input" placeholder="Enter city name...">
-                <button id="search-button">Search</button>
-            </section>
+    <div class="site-container">
+        <header class="box">Weather Dashboard</header>
+        <div id="content-wrapper">
+            <div class="box" id="left-panel">
+                <section id="search-section">
+                    <h2>Search Weather</h2>
+                    <input type="text" id="city-input" placeholder="Enter city name...">
+                    <button id="search-button">Search</button>
+                </section>
 
-            <section id="search-history-section">
-                <h2>Search History</h2>
-                <ul id="search-history-list">
-                </ul>
-            </section>
-        </div>
+                <section id="search-history-section">
+                    <h2>Search History</h2>
+                    <ul id="search-history-list">
+                    </ul>
+                </section>
+            </div>
 
-        <div id="right-panel">
-            <section id="current-weather-section">
-                <h2>Current Weather</h2>
-                <div id="current-weather">
-                    <h3 id="city-name-date"></h3>
-                    <img id="weather-icon" src="" alt="Weather Icon">
-                    <p id="temperature"></p>
-                    <p id="humidity"></p>
-                    <p id="wind-speed"></p>
+            <div class="box" id="right-panel">
+                <section id="current-weather-section">
+                    <h2>Current Weather</h2>
+                    <div class="weather-container" id="current-weather">
+                        <h3 id="city-name-date"></h3>
+                        <img id="weather-icon" src="" alt="Weather Icon">
+                        <p id="temperature"></p>
+                        <p id="humidity"></p>
+                        <p id="wind-speed"></p>
+                    </div>
+                </section>
+
+                <section id="forecast-section">
+                    <h2>5-Day Forecast</h2>
+                    <div id="forecast-wrapper">
+                    <div class="forecast-day" id="day1">
+                        <h4 class="forecast-date"></h4>
+                        <img class="forecast-icon" src="" alt="Weather Icon">
+                        <p class="forecast-temperature"></p>
+                        <p class="forecast-wind-speed"></p>
+                        <p class="forecast-humidity"></p>
+                    </div>
+
+                    <div class="forecast-day" id="day2">
+                        <h4 class="forecast-date"></h4>
+                        <img class="forecast-icon" src="" alt="Weather Icon">
+                        <p class="forecast-temperature"></p>
+                        <p class="forecast-wind-speed"></p>
+                        <p class="forecast-humidity"></p>
+                    </div>
+
+                    <div class="forecast-day" id="day3">
+                        <h4 class="forecast-date"></h4>
+                        <img class="forecast-icon" src="" alt="Weather Icon">
+                        <p class="forecast-temperature"></p>
+                        <p class="forecast-wind-speed"></p>
+                        <p class="forecast-humidity"></p>
+                    </div>
+
+                    <div class="forecast-day" id="day4">
+                        <h4 class="forecast-date"></h4>
+                        <img class="forecast-icon" src="" alt="Weather Icon">
+                        <p class="forecast-temperature"></p>
+                        <p class="forecast-wind-speed"></p>
+                        <p class="forecast-humidity"></p>
+                    </div>
+
+                    <div class="forecast-day" id="day5">
+                        <h4 class="forecast-date"></h4>
+                        <img class="forecast-icon" src="" alt="Weather Icon">
+                        <p class="forecast-temperature"></p>
+                        <p class="forecast-wind-speed"></p>
+                        <p class="forecast-humidity"></p>
+                    </div>
                 </div>
             </section>
-
-            <section id="forecast-section">
-                <h2>5-Day Forecast</h2>
-                <div id="forecast-wrapper">
-            <div class="forecast-day" id="day1">
-                <h4 class="forecast-date"></h4>
-                <img class="forecast-icon" src="" alt="Weather Icon">
-                <p class="forecast-temperature"></p>
-                <p class="forecast-wind-speed"></p>
-                <p class="forecast-humidity"></p>
-            </div>
-
-            <div class="forecast-day" id="day2">
-                <h4 class="forecast-date"></h4>
-                <img class="forecast-icon" src="" alt="Weather Icon">
-                <p class="forecast-temperature"></p>
-                <p class="forecast-wind-speed"></p>
-                <p class="forecast-humidity"></p>
-            </div>
-
-            <div class="forecast-day" id="day3">
-                <h4 class="forecast-date"></h4>
-                <img class="forecast-icon" src="" alt="Weather Icon">
-                <p class="forecast-temperature"></p>
-                <p class="forecast-wind-speed"></p>
-                <p class="forecast-humidity"></p>
-            </div>
-
-            <div class="forecast-day" id="day4">
-                <h4 class="forecast-date"></h4>
-                <img class="forecast-icon" src="" alt="Weather Icon">
-                <p class="forecast-temperature"></p>
-                <p class="forecast-wind-speed"></p>
-                <p class="forecast-humidity"></p>
-            </div>
-
-            <div class="forecast-day" id="day5">
-                <h4 class="forecast-date"></h4>
-                <img class="forecast-icon" src="" alt="Weather Icon">
-                <p class="forecast-temperature"></p>
-                <p class="forecast-wind-speed"></p>
-                <p class="forecast-humidity"></p>
-            </div>
         </div>
-    </section>
+    </div>
     <script src="Develop/script.js"></script>
 </body>
 </html>

@@ -26,6 +26,7 @@ function displayCurrentWeather(data) {
     document.getElementById('temperature').textContent = `Temperature: ${data.list[0].main.temp}°F`;
     document.getElementById('humidity').textContent = `Humidity: ${data.list[0].main.humidity}%`;
     document.getElementById('wind-speed').textContent = `Wind Speed: ${data.list[0].wind.speed} m/s`;
+    document.getElementById('current-weather').style.display = 'block';
 }
 
 function displayForecast(data) {
