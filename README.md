@@ -12,7 +12,7 @@
 
 ## Description
 
-[Visit the Deployed Portfolio](https://nba251522.github.io/Weather-Dashboard/)
+[Visit the Deployed Webpage](https://nba251522.github.io/Weather-Dashboard/)
 
 The Weather Dashboard allows users to view current and future weather conditions of multiple cities. This can help users plan their days or trips according to the weather.
 
