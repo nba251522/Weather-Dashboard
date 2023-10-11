@@ -1,24 +1,67 @@
 body {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  font-family: 'Arial', sans-serif;
   padding: 20px;
+  background-color: #e6e6e6;
 }
 
 header {
-  width: 100%;
   text-align: center;
-  margin-bottom: 20px;
   font-size: 24px;
   font-weight: bold;
-}
-
-#search-section, #search-history-section {
-  width: 30%;
   margin-bottom: 20px;
 }
 
-#current-weather-section, #forecast-section {
-  width: 68%;  /* Adjusted to account for potential scrollbar or minor paddings */
-  margin-top: 20px;
+#content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#left-panel {
+  flex: 30%; 
+}
+
+#right-panel {
+  flex: 70%; 
+}
+
+@media (max-width: 768px) {
+  #content-wrapper {
+      flex-direction: column;
+  }
+
+  #left-panel, #right-panel {
+      flex: 100%; 
+  }
+}
+
+#forecast-wrapper {
+  display: flex; 
+  justify-content: space-between; 
+}
+
+.forecast-day {
+  flex: 1; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: #ffffff; 
+  padding: 10px; 
+  margin: 0 5px; 
+  border-radius: 5px; 
+}
+
+#forecast-section {
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  #forecast-wrapper {
+      flex-wrap: wrap; 
+      justify-content: center; 
+  }
+
+  .forecast-day {
+      margin: 5px; 
+      flex: none; 
+      width: calc(100% / 2 - 20px); 
+  }
 }
