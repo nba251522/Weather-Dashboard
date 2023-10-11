@@ -39,7 +39,7 @@ To start the weather dashboard, [visit the deployed site](https://nba251522.gith
 **Thomas Er**
 - [LinkedIn](https://www.linkedin.com/in/thomas-er-9b77321b9)
 - [Github](https://github.com/nba251522)
-- [Porfolio]()
+- [Porfolio](https://nba251522.github.io/thomas-er-porfolio/)
 
 ## Credits
 
