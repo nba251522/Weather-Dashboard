@@ -48,7 +48,6 @@ The creation of this application was aided by insights from the following resour
 - [W3Schools - JavaScript Tutorial](https://www.w3schools.com/js/)
 - [W3Schools - CSS Tutorial](https://www.w3schools.com/css/default.asp)
 - [W3Schools - HTML Tutorial](https://www.w3schools.com/html/default.asp)
-- [JavaScript Full Course by SuperSimpleDev - YouTube](https://www.youtube.com/watch?v=G3e-cpL7ofc&t=1188s&ab_channel=SuperSimpleDev)
 - [OpenWeather API](https://openweathermap.org/api)
 
 ## License
